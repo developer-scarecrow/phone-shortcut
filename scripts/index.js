@@ -11,5 +11,6 @@ $(document).ready(function () {
         var text = $('#first_name').val();
         console.log(text)
         $('.inputText').text(text)
+        $('.inputText').attr('href', 'tel:' + text.replace(/-/g, ''))
     });
 });
