@@ -7,4 +7,9 @@ var instance = M.FloatingActionButton.init(elem, {
 
 $(document).ready(function () {
     $('.fixed-action-btn').floatingActionButton();
+    $('.updateButton').on('click', function () {
+        var text = $('#first_name').val();
+        console.log(text)
+        $('.inputText').text(text)
+    });
 });
